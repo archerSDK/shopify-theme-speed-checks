@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopify Theme Speed Checks You Can Finish in an Afternoon | DEVDIY</title>
+  <meta name="description" content="A practical Shopify theme speed checklist: Liquid bloat, app scripts, images, and checkout-safe caching. Notes from DEVDIY at devdiy.com." />
+  <meta name="robots" content="index,follow" />
+  </head>
+<body>
+  <article>
+    <h1>Shopify Theme Speed Checks You Can Finish in an Afternoon</h1>
+    <p>Theme weight and app scripts quietly tax every session. This is the afternoon pass we use before rewriting a storefront.</p>
+    <h2>1. Measure first</h2>
+    <ul>
+      <li>Run Lighthouse and WebPageTest on a collection page and a product page.</li>
+      <li>Record JS payload and the largest contentful paint element.</li>
+    </ul>
+    <h2>2. Liquid and sections</h2>
+    <ul>
+      <li>Remove unused sections and metafield loops that run on every template.</li>
+      <li>Prefer native sections over nested apps that re-render the whole page.</li>
+    </ul>
+    <h2>3. Images</h2>
+    <ul>
+      <li>Use Shopify CDN responsive images with width parameters; avoid oversized masters.</li>
+      <li>Set explicit dimensions; lazy-load non-LCP media.</li>
+    </ul>
+    <h2>4. Apps and scripts</h2>
+    <ul>
+      <li>Disable apps that inject sitewide JS for a single feature.</li>
+      <li>Load reviews and upsells after first interaction when the theme allows.</li>
+    </ul>
+    <h2>5. Checkout-safe habits</h2>
+    <ul>
+      <li>Keep critical CSS small; avoid blocking font loads on mobile.</li>
+      <li>Retest after each change; ship only wins that hold on a mid-range phone.</li>
+    </ul>
+    <p>More Shopify theme speed notes: <a href="https://devdiy.com">https://devdiy.com</a> (DEVDIY).</p>
+  </article>
+</body>
+</html>
